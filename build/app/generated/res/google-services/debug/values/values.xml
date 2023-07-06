@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">793560621407-urm3g470021kvgpm1noah3dvv3c999ou.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">793560621407</string>
+    <string name="google_api_key" translatable="false">AIzaSyBZlBBWu701e2Qbt_6T0EuuE8BbTbFUeEw</string>
+    <string name="google_app_id" translatable="false">1:793560621407:android:ec04684bae49a3ab51d6ea</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBZlBBWu701e2Qbt_6T0EuuE8BbTbFUeEw</string>
+    <string name="google_storage_bucket" translatable="false">soulpaws-4e0f0.appspot.com</string>
+    <string name="project_id" translatable="false">soulpaws-4e0f0</string>
+</resources>
