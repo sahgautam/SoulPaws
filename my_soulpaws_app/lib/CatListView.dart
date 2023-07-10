@@ -118,6 +118,7 @@ class MyPageViewControllerCat extends StatelessWidget {
           child: CreatePageStackCat(
             index: index,
             catName: cat.catName,
+            catId: cat.catId,
             catDescription: cat.catDescription,
             imageLink: cat.imageUrl,
             breed: cat.breed,
