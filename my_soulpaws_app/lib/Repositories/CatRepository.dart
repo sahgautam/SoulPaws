@@ -5,13 +5,13 @@ import 'package:my_first_app/models/ProductModel.dart';
 class CatRepository{
   final instance = FirebaseService.db.collection("Cat").withConverter(
       fromFirestore: (snapshot, _){
-        return ProductModel.fromFirebaseSnapshot(snapshot);
+        return CatModel.fromFirebaseSnapshot(snapshot);
       },
       toFirestore: (CatModel model, _) => model.toJson());
 
   Future<dynamic> createCat(CatModel data) async {
     try{
-      final product = await instance.add(data);
+      final Cat = await instance.add(data);
       return Cat;
     }catch(e){rethrow;}
   }
