@@ -60,4 +60,35 @@ class _CatListViewState extends State<CatListView> {
   }
 }
 
+class MyPageViewControllerCat extends StatelessWidget {
+  final PageController controllerCat;
+  final List<CatModel> cats;
 
+  MyPageViewControllerCat(this.controllerCat, this.cats);
+
+  @override
+  Widget build(BuildContext context) {
+    List<CatModel> lessThan5 = [];
+    List<CatModel> greaterThan5 = [];
+
+    for (int i = 0; i <= cats.length - 1; i++) {
+      print("The total i is: -->$i");
+      if (i <= 2) {
+        print("The IF value of  i is: $i");
+        lessThan5.add(cats[i]);
+      } else {
+        print("The Else value of  i is:$i");
+        greaterThan5.add(cats[i]);
+      }
+    }
+    return Column(
+      children: [
+        Expanded(child: firstPageViewController(controllerCat, lessThan5)),
+        Expanded(
+          child: secondPageViewController(controllerCat, greaterThan5),
+        )
+      ],
+    );
+  }
+
+  
