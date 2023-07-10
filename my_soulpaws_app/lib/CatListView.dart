@@ -111,4 +111,22 @@ class MyPageViewControllerCat extends StatelessWidget {
         });
   }
 
-  
+  Widget _createPageSlider(CatModel cat, int index) {
+    return Column(
+      children: [
+        Flexible(
+          child: CreatePageStackCat(
+            index: index,
+            catName: cat.catName,
+            catId: cat.catId,
+            catDescription: cat.catDescription,
+            imageLink: cat.imageUrl,
+            breed: cat.breed,
+            color: cat.color,
+            price: cat.estimatedPrice,
+          ),
+        ),
+      ],
+    );
+  }
+}
