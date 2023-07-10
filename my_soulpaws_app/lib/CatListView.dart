@@ -101,4 +101,14 @@ class MyPageViewControllerCat extends StatelessWidget {
         });
   }
 
+  Widget secondPageViewController(
+      PageController pageControllerCat, List<CatModel> cats) {
+    return PageView.builder(
+        controller: pageControllerCat,
+        itemCount: cats.length,
+        itemBuilder: (context, position) {
+          return _createPageSlider(cats[position], position);
+        });
+  }
+
   
