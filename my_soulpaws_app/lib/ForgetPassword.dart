@@ -34,4 +34,11 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
 
   late GlobalUIViewModel _ui;
   late AuthViewModel _auth;
- 
+  @override
+  void initState() {
+    _ui = Provider.of<GlobalUIViewModel>(context, listen: false);
+    _auth = Provider.of<AuthViewModel>(context, listen: false);
+    super.initState();
+  }
+
+  
