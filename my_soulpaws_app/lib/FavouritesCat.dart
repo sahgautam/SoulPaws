@@ -30,4 +30,24 @@ class _FavoriteCatState extends State<FavoriteCat> {
     super.initState();
   }
 
-  
+  @override
+  Widget build(BuildContext context) {
+    var favCat = context.watch<FavoriteCatViewModel>().favcat;
+    return Scaffold(
+        appBar: AppBar(
+            backgroundColor: Color.fromRGBO(191, 134, 143, 30),
+            title: Row(
+              children: [
+                SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  "Favorite Cats",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ],
+            )),
+        
