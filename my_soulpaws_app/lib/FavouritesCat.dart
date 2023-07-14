@@ -21,4 +21,13 @@ class _FavoriteCatState extends State<FavoriteCat> {
     await db.collection('favCat').doc(id).delete();
   }
 
+  @override
+  void initState() {
+    _favoriteCatViewModel =
+        Provider.of<FavoriteCatViewModel>(context, listen: false);
+    _favoriteCatViewModel.getCat();
 
+    super.initState();
+  }
+
+  
