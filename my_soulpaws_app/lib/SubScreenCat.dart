@@ -16,3 +16,7 @@ class SubScreenCat extends StatefulWidget {
   final int? index;
   final String? catName;
   final String? catDescription;
+  final String? imageLink;
+  final String? breed;
+  final String? color;
+  final int? price;
