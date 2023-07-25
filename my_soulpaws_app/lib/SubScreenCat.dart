@@ -4,3 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:soulpaws/ViewModel/CatViewModel.dart';
 import 'package:provider/provider.dart';
+
+import '../../ViewModel/GlobalUIViewModel.dart';
+import '../../ViewModel/auth_viewmodel.dart';
+import '../../Widgets/AppColumn.dart';
+import '../../Widgets/AppIcon.dart';
+import '../../Widgets/ExpandableTextWidget.dart';
+import '../../model/favCatModel.dart';
