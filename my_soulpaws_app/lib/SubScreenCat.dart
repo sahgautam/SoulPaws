@@ -11,3 +11,8 @@ import '../../Widgets/AppColumn.dart';
 import '../../Widgets/AppIcon.dart';
 import '../../Widgets/ExpandableTextWidget.dart';
 import '../../model/favCatModel.dart';
+
+class SubScreenCat extends StatefulWidget {
+  final int? index;
+  final String? catName;
+  final String? catDescription;
