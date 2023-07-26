@@ -36,5 +36,7 @@ class _SubScreenCatState extends State<SubScreenCat> {
   bool clicked = false;
   late GlobalUIViewModel _ui;
   late AuthViewModel _auth;
+  PageController pageController = PageController(viewportFraction: 0.85);
+
 
 
