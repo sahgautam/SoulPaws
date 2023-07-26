@@ -43,7 +43,8 @@ class _SubScreenCatState extends State<SubScreenCat> {
       userId: "1",
       catId: '1',
       catgName: widget.catName!,
-
+      imageUrl: widget.imageLink!,
+      breed: widget.breed!,
     );
 
 
