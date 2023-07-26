@@ -31,4 +31,4 @@ class SubScreenCat extends StatefulWidget {
 class _SubScreenCatState extends State<SubScreenCat> {
   late CatViewModel _catViewModel;
   var _currentPageValue = 0.0;
-
+  PageController pageControllerCat = PageController(viewportFraction: 0.85);
