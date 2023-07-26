@@ -28,3 +28,7 @@ class SubScreenCat extends StatefulWidget {
   State<SubScreenCat> createState() => _SubScreenCatState();
 }
 
+class _SubScreenCatState extends State<SubScreenCat> {
+  late CatViewModel _catViewModel;
+  var _currentPageValue = 0.0;
+
