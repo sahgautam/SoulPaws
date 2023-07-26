@@ -37,6 +37,8 @@ class _SubScreenCatState extends State<SubScreenCat> {
   late GlobalUIViewModel _ui;
   late AuthViewModel _auth;
   PageController pageController = PageController(viewportFraction: 0.85);
+  Future<void> saveFavoriteCat() async {
+    FirebaseFirestore db = FirebaseFirestore.instance;
 
 
 
