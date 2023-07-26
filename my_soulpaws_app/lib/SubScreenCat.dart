@@ -39,6 +39,12 @@ class _SubScreenCatState extends State<SubScreenCat> {
   PageController pageController = PageController(viewportFraction: 0.85);
   Future<void> saveFavoriteCat() async {
     FirebaseFirestore db = FirebaseFirestore.instance;
+    final data = FavoriteCatModel(
+      userId: "1",
+      catId: '1',
+      catgName: widget.catName!,
+
+    );
 
 
 
