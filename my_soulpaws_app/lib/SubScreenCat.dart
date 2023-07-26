@@ -23,3 +23,8 @@ class SubScreenCat extends StatefulWidget {
 
   SubScreenCat(this.index, this.catName, this.catDescription, this.imageLink,
       this.price, this.breed, this.color);
+
+  @override
+  State<SubScreenCat> createState() => _SubScreenCatState();
+}
+
