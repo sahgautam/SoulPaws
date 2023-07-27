@@ -48,5 +48,8 @@ class _SubScreenCatState extends State<SubScreenCat> {
     );
     db.collection("favCat").add(data.toJson()).then((value) {
       print("Added Data with ID:${valued.id}");
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Container(
+
 
 
