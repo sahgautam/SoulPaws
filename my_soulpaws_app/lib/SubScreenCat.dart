@@ -52,6 +52,12 @@ class _SubScreenCatState extends State<SubScreenCat> {
           content: Container(
           child: Text(
           "Cat Added to Favorites",
+            style: TextStyle(color: Colors.white),
+          ),
+          )));
+    });
+  }
+
 
 
 
