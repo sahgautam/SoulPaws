@@ -46,6 +46,7 @@ class _SubScreenCatState extends State<SubScreenCat> {
       imageUrl: widget.imageLink!,
       breed: widget.breed!,
     );
-
+    db.collection("favCat").add(data.toJson()).then((value) {
+      print("Added Data with ID:${valued.id}");
 
 
