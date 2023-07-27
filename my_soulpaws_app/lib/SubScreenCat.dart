@@ -50,6 +50,8 @@ class _SubScreenCatState extends State<SubScreenCat> {
       print("Added Data with ID:${valued.id}");
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Container(
+          child: Text(
+          "Cat Added to Favorites",
 
 
 
