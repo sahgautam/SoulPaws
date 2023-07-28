@@ -62,6 +62,7 @@ class _SubScreenCatState extends State<SubScreenCat> {
     _catViewModel = Provider.of<CatViewModel>(context, listen: false);
     _catViewModel.getCat();
     print("The Cat -->${_catViewModel.getCat()}");
+    super.initState();
 
 
 
