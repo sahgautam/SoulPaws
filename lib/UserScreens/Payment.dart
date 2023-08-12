@@ -6,3 +6,7 @@ class KhaltiPayment extends StatefulWidget {
   @override
   State<KhaltiPayment> createState() => _KhaltiPaymentState();
 }
+
+class _KhaltiPaymentState extends State<KhaltiPayment> {
+  TextEditingController phoneController = new TextEditingController();
+  TextEditingController pinCodeController = new TextEditingController();
