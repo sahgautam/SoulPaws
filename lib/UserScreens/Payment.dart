@@ -40,3 +40,6 @@ class _KhaltiPaymentState extends State<KhaltiPayment> {
     keyboardType: TextInputType.number,
     decoration: const InputDecoration(labelText: "Pin Code "),
     ),
+    SizedBox(
+    height: 10,
+    ),
