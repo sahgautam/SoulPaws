@@ -15,3 +15,11 @@ List<Color> CarouselColor = [
   Colors.amber.shade300,
   Colors.deepPurple.shade300
 ];
+List<String> Description = [
+  "You can't buy happiness, \n but you can rescue it.",
+  "Love is a four-legged word.",
+  "Cuteness overload, \n am I right?",
+  "Because its your Family!",
+  "Hi! I am Oscar \n\"The Meow\"",
+  "Henlo! Woofcome"
+];
