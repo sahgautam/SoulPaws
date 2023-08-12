@@ -79,6 +79,8 @@ class _SubScreenCatState extends State<SubScreenCat> {
         Positioned(
         left: 0,
         right: 0,
+        child: Container(
+        width: double.maxFinite,
 
 
 
