@@ -29,3 +29,21 @@ _currentPageValue = pageController.page!;
 });
 }
 
+@override
+Widget build(BuildContext context) {
+var dog = context.watch<DogViewModel>().dog;
+return SafeArea(
+child: Scaffold(
+body: Stack(children: [
+Positioned(
+left: 0,
+right: 0,
+child: Container(
+width: double.maxFinite,
+//takes all available width
+height: MediaQuery.of(context).size.height / 2.2,
+decoration: BoxDecoration(
+image: DecorationImage(
+fit: BoxFit.contain,
+image: NetworkImage(widget.imageLink!))))),
+Positioned(
