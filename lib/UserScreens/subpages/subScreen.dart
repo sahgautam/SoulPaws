@@ -47,3 +47,19 @@ image: DecorationImage(
 fit: BoxFit.contain,
 image: NetworkImage(widget.imageLink!))))),
 Positioned(
+top: MediaQuery.of(context).size.width * 0.1,
+left: MediaQuery.of(context).size.width * 0.04,
+right: MediaQuery.of(context).size.width * 0.03,
+child: InkWell(
+child: Row(
+children: [
+AppIcon(icon: Icons.arrow_back),
+],
+),
+onTap: () {
+Navigator.of(context).pop("/SubPage");
+// MyConstants.holdNavigatePlaceDetails = null;
+// Navigator.of(context).pop("/SubPages");
+},
+)),
+Positioned(
