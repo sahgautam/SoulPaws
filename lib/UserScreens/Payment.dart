@@ -22,3 +22,7 @@ class _KhaltiPaymentState extends State<KhaltiPayment> {
     centerTitle: true,
     backgroundColor: Colors.purple,
     ),
+    body: Padding(
+    padding: const EdgeInsets.all(20.0),
+    child: Column(
+    children: [
