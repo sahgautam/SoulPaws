@@ -55,3 +55,25 @@ class _KhaltiPaymentState extends State<KhaltiPayment> {
     productUrl: "",
     additionalData: {}),
     );
+    final otp = await showDialog(
+    context: (context),
+    barrierDismissible: false,
+    builder: (context) {
+    String? _otp;
+    return AlertDialog(
+    title: Text("Enter OTP"),
+    content: TextField(
+    onChanged: (v) => _otp = v,
+    keyboardType: TextInputType.number,
+    decoration: InputDecoration(label: Text("OTP")),
+    ),
+    actions: [
+    SimpleDialogOption(
+    child: Text("Submit"),
+    onPressed: () {
+    Navigator.pop(context, _otp);
+    },
+    )
+    ],
+    );
+    });
