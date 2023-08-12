@@ -73,3 +73,12 @@ left: MediaQuery.of(context).size.height * 0.04,
 right: MediaQuery.of(context).size.height * 0.03,
 top: MediaQuery.of(context).size.height * 0.03,
 ),
+decoration: BoxDecoration(
+borderRadius: BorderRadius.only(
+topRight: Radius.circular(40),
+topLeft: Radius.circular(40)),
+color: Colors.white),
+child: Column(
+crossAxisAlignment: CrossAxisAlignment.start,
+children: [
+Text(
