@@ -31,3 +31,9 @@ color: Colors.pink,
 ),
 Icon(Icons.pets, color: Colors.black),
 Icon(Icons.sentiment_satisfied_alt, color: Colors.yellow),
+  Icon(Icons.filter_vintage, color: Colors.red),
+  Icon(
+    Icons.ac_unit,
+    color: Colors.lightBlueAccent,
+  )
+];
