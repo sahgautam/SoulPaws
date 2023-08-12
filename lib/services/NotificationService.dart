@@ -98,6 +98,10 @@ class NotificationService {
       {required RemoteNotification notification,
         BuildContext? buildContext,
         String? payload}) async {
-    
+    try {
+      if (buildContext != null) {
+        context = buildContext;
+      }
+      
   }
       }
