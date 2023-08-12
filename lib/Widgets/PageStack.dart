@@ -35,3 +35,14 @@ class CreatePageStack extends StatelessWidget {
     margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
     child: Stack(alignment: Alignment.topCenter, children: [
     Expanded(
+    child: Container(
+    height: 150,
+    decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(30),
+    color: index.isEven
+    ? Color.fromRGBO(255, 255, 187, 10)
+        : Color.fromRGBO(195, 223, 195, 10),
+    image: DecorationImage(
+    fit: BoxFit.contain, image: NetworkImage(imageLink))),
+    ),
+    ),
