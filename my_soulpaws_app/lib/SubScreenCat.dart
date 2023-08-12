@@ -65,6 +65,10 @@ class _SubScreenCatState extends State<SubScreenCat> {
     super.initState();
     pageControllerCat.addListener(() {
       setState(() {
+        _currentPageValue = pageControllerCat.page!;
+      });
+    });
+  }
 
 
 
