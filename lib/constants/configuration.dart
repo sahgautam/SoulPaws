@@ -43,3 +43,9 @@ List<Map> drawerItems = [
 'icons': Icons.pets,
 'title': 'Adoption',
 },
+  {'icons': Icons.attach_money_rounded, 'title': 'Payment'},
+  {'icons': Icons.favorite, 'title': 'Favorite Dogs'},
+  {'icons': Icons.favorite_outline_rounded, 'title': 'Favorites Cats'},
+  {'icons': Icons.person, 'title': 'Profile'},
+  {'icons': Icons.healing, 'title': 'Veterinary'},
+];
