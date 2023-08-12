@@ -68,5 +68,9 @@ class NotificationService {
           notificationImage,
           largeIcon: notificationLogo,
         );
-        
+      } catch (e) {
+        print("Notification Error ${e}");
+      }
+    }
+    
       }
