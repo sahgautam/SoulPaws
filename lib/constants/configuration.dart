@@ -8,3 +8,10 @@ List<Map> categories = [
   {"name": "Cats", "iconPath": "Assets/cat_icon.png"},
   {"name": "Dogs", "iconPath": "Assets/dog_icon.png"}
 ];
+List<Color> CarouselColor = [
+  Colors.blue.shade300,
+  Colors.blueGrey.shade300,
+  Colors.green.shade300,
+  Colors.amber.shade300,
+  Colors.deepPurple.shade300
+];
