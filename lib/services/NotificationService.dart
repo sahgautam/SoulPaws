@@ -72,5 +72,13 @@ class NotificationService {
         print("Notification Error ${e}");
       }
     }
+    final id = DateTime.now().millisecondsSinceEpoch ~/ 1000;
+    final NotificationDetails notificationDetails = NotificationDetails(
+        android: AndroidNotificationDetails("myapp", "myapp channel",
+            channelDescription: "Channel Description",
+            importance: Importance.max,
+            priority: Priority.high,
+            styleInformation: styleinformationDesign),
+        iOS: DarwinNotificationDetails());
     
       }
