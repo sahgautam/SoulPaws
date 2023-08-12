@@ -92,3 +92,18 @@ SizedBox(
 height: 5,
 ),
 Expanded(
+child: SingleChildScrollView(
+child: ExpandableTextWidget(
+Des_text: widget.dogDescription!,
+),
+),
+),
+Center(
+child: AppColumn(
+Name: widget.dogName!,
+price: widget.price!,
+color: widget.color!,
+breed: widget.breed!,
+),
+),
+SizedBox(
