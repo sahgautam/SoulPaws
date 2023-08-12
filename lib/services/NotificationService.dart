@@ -113,6 +113,22 @@ class NotificationService {
           largeIcon: FilePathAndroidBitmap(bigpicture),
         );
       }
-      
+
+      final id = DateTime.now().millisecondsSinceEpoch ~/ 1000;
+      final NotificationDetails notificationDetails = NotificationDetails(
+          android: AndroidNotificationDetails("myapp", "myapp channel",
+              channelDescription: "myapp channel description",
+              importance: Importance.max,
+              priority: Priority.high,
+              styleInformation: styleinformationDesign),
+          iOS: DarwinNotificationDetails());
+      await _notificationsPlugin.show(
+          id, notification.title, notification.body, notificationDetails,
+          payload: payload);
+    } on Exception catch (e) {
+      print(e.toString());
+    }
+  }
+}
   }
       }
