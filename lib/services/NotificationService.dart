@@ -102,6 +102,17 @@ class NotificationService {
       if (buildContext != null) {
         context = buildContext;
       }
+      var styleinformationDesign;
+      if (notification.android!.imageUrl != null) {
+        final bigpicture = await _downloadAndSaveFile(
+            notification.android!.imageUrl.toString(), 'bigPicture');
+        final smallpicture = await _downloadAndSaveFile(
+            notification.android!.imageUrl.toString(), 'smallIcon');
+        styleinformationDesign = BigPictureStyleInformation(
+          FilePathAndroidBitmap(smallpicture),
+          largeIcon: FilePathAndroidBitmap(bigpicture),
+        );
+      }
       
   }
       }
