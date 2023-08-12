@@ -80,5 +80,8 @@ class NotificationService {
             priority: Priority.high,
             styleInformation: styleinformationDesign),
         iOS: DarwinNotificationDetails());
-    
+    _notificationsPlugin.show(id, title, body, notificationDetails,
+        payload: payload);
+  }
+  
       }
