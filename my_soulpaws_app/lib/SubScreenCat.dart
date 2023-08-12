@@ -71,6 +71,8 @@ class _SubScreenCatState extends State<SubScreenCat> {
   }
   @override
   Widget build(BuildContext context) {
+    var cat = context.watch<CatViewModel>().cat;
+    int weight = 0;
 
 
 
