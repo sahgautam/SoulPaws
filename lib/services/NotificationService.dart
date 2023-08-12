@@ -52,4 +52,10 @@ class NotificationService {
     if (buildContext != null) {
       context = buildContext;
     }
-    
+
+    // if image from asset
+    var styleinformationDesign;
+    if (image != null && logo != null) {
+      late AndroidBitmap<Object>? notificationImage;
+      late AndroidBitmap<Object>? notificationLogo;
+      try {
