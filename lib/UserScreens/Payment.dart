@@ -31,3 +31,12 @@ class _KhaltiPaymentState extends State<KhaltiPayment> {
     keyboardType: TextInputType.phone,
     decoration: const InputDecoration(labelText: "Phone number"),
     ),
+    SizedBox(
+    height: 10,
+    ),
+    TextFormField(
+    controller: pinCodeController,
+    obscureText: true,
+    keyboardType: TextInputType.number,
+    decoration: const InputDecoration(labelText: "Pin Code "),
+    ),
