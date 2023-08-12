@@ -75,6 +75,7 @@ class _SubScreenCatState extends State<SubScreenCat> {
     int weight = 0;
     return SafeArea(
         child: Scaffold(
+        body: Stack(children: [
 
 
 
