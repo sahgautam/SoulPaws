@@ -73,6 +73,8 @@ class _SubScreenCatState extends State<SubScreenCat> {
   Widget build(BuildContext context) {
     var cat = context.watch<CatViewModel>().cat;
     int weight = 0;
+    return SafeArea(
+        child: Scaffold(
 
 
 
