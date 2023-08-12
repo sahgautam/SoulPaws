@@ -111,3 +111,12 @@ height: 15,
 ),
 ]))),
 ]),
+bottomNavigationBar: Container(
+height: 75,
+padding: EdgeInsets.all(20),
+decoration: BoxDecoration(
+color: Color(0xfffcf4e4),
+borderRadius: BorderRadius.only(
+topLeft: Radius.circular(40),
+topRight: Radius.circular(40),
+)),
