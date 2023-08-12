@@ -77,3 +77,24 @@ class _KhaltiPaymentState extends State<KhaltiPayment> {
     ],
     );
     });
+    if (otp != null) {
+    try {
+    final model = await Khalti.service.confirmPayment(
+    request: PaymentConfirmationRequestModel(
+    confirmationCode: otp,
+    token: initiationModel.token,
+    transactionPin: pinCodeController.text));
+    showDialog(
+    context: (context),
+    builder: (context) {
+    return AlertDialog(
+    title: const Text(
+    "Payment Successful",
+    style: TextStyle(
+    color: Colors.green,
+    fontWeight: FontWeight.bold),
+    ),
+    content:
+    Text("Verification Token ${model.token}"),
+    );
+    });
