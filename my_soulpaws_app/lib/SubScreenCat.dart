@@ -76,6 +76,9 @@ class _SubScreenCatState extends State<SubScreenCat> {
     return SafeArea(
         child: Scaffold(
         body: Stack(children: [
+        Positioned(
+        left: 0,
+        right: 0,
 
 
 
