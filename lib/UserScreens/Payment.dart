@@ -26,3 +26,8 @@ class _KhaltiPaymentState extends State<KhaltiPayment> {
     padding: const EdgeInsets.all(20.0),
     child: Column(
     children: [
+    TextFormField(
+    controller: phoneController,
+    keyboardType: TextInputType.phone,
+    decoration: const InputDecoration(labelText: "Phone number"),
+    ),
