@@ -46,3 +46,11 @@ class CreatePageStack extends StatelessWidget {
     fit: BoxFit.contain, image: NetworkImage(imageLink))),
     ),
     ),
+    Container(
+    height: 100,
+    width: 200,
+    margin: EdgeInsets.only(top: 100.0),
+    decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(30),
+    color: Colors.white,
+    ),
