@@ -25,3 +25,13 @@ class Veterinary extends StatelessWidget {
       'https://www.google.com/search?q=advanced+pet+hospital&tbm=lcl&sxsrf=AJOqlzV8FyirEZ6Komxlf1wSNs9pjz4wfw%3A1677635449377&ei=ea_-Y8_QFomU4-EP5Oq0wA4&oq=Advanced+&gs_lcp=Cg1nd3Mtd2l6LWxvY2FsEAEYADIFCAAQkQIyBQgAEJECMgUIABCABDIKCAAQgAQQsQMQCjIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoECAAQQzoKCAAQsQMQgwEQQzoLCAAQgAQQsQMQgwE6CAgAEIAEELEDOggIABCxAxCDAToLCAAQsQMQgwEQkQI6CAgAEIAEEIsDOgoIABCABBAUEIcCOg4IABCABBCxAxCDARCLAzoNCAAQgAQQsQMQsQMQClAAWNwQYModaABwAHgAgAHPAYgB1AySAQUwLjcuMpgBAKABAbgBAsABAQ&sclient=gws-wiz-local'
     },
   ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+        backgroundColor: Color.fromRGBO(191, 134, 143, 30),
+    title: Text(
+    'Available Veterinary',
+    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+    ),
+    ),
