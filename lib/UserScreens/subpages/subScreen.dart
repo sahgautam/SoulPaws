@@ -63,3 +63,13 @@ Navigator.of(context).pop("/SubPage");
 },
 )),
 Positioned(
+left: 0,
+right: 0,
+bottom: 0,
+top: MediaQuery.of(context).size.height / 2.5,
+child: Container(
+padding: EdgeInsets.only(
+left: MediaQuery.of(context).size.height * 0.04,
+right: MediaQuery.of(context).size.height * 0.03,
+top: MediaQuery.of(context).size.height * 0.03,
+),
