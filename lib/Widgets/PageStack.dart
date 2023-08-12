@@ -19,3 +19,14 @@ class CreatePageStack extends StatelessWidget {
         required this.breed,
         required this.color,
         required this.price});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+        onTap: () {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => SubScreen(index, dogName, dogDescription,
+                  imageLink, price, breed, color)));
+    },
