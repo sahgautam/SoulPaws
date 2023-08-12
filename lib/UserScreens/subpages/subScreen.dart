@@ -15,3 +15,17 @@ style: TextStyle(color: Colors.white),
 )));
 });
 }
+
+@override
+void initState() {
+_dogViewModel = Provider.of<DogViewModel>(context, listen: false);
+_dogViewModel.getDog();
+print("The Final Place -->${_dogViewModel.getDog()}");
+super.initState();
+pageController.addListener(() {
+setState(() {
+_currentPageValue = pageController.page!;
+});
+});
+}
+
