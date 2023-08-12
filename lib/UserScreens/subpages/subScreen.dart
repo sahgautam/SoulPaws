@@ -107,3 +107,7 @@ breed: widget.breed!,
 ),
 ),
 SizedBox(
+height: 15,
+),
+]))),
+]),
