@@ -38,3 +38,8 @@ Icon(Icons.sentiment_satisfied_alt, color: Colors.yellow),
   )
 ];
 List<String> rows = ["row1", "row2", "row3"];
+List<Map> drawerItems = [
+{
+'icons': Icons.pets,
+'title': 'Adoption',
+},
