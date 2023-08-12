@@ -45,3 +45,14 @@ class AuthViewModel with ChangeNotifier {
       rethrow;
     }
   }
+
+  Future<void> checkLogin() async {
+    try {
+      _loggedInUser = await AuthRepository().getUserDetail(_user!.uid);
+      notifyListeners();
+    } catch (err) {
+      _user = null;
+      AuthRepository().logout();
+      rethrow;
+    }
+  }
