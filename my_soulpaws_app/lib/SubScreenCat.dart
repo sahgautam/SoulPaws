@@ -83,6 +83,10 @@ class _SubScreenCatState extends State<SubScreenCat> {
         width: double.maxFinite,
         //takes all available width
         height: MediaQuery.of(context).size.height / 2.2,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.contain,
+                    image: NetworkImage(widget.imageLink!))))),
 
 
 
