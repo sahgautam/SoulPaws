@@ -43,3 +43,15 @@ class _KhaltiPaymentState extends State<KhaltiPayment> {
     SizedBox(
     height: 10,
     ),
+    ElevatedButton(
+    onPressed: () async {
+    final initiationModel = await Khalti.service.initiatePayment(
+    request: PaymentInitiationRequestModel(
+    amount: 1000,
+    mobile: phoneController.text,
+    productIdentity: "pID",
+    productName: "ProductName",
+    transactionPin: pinCodeController.text,
+    productUrl: "",
+    additionalData: {}),
+    );
