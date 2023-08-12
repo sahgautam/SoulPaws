@@ -11,3 +11,11 @@ class CreatePageStack extends StatelessWidget {
   final String breed;
   final String color;
   final int price;
+  const CreatePageStack(
+      {required this.index,
+        required this.dogName,
+        required this.dogDescription,
+        required this.imageLink,
+        required this.breed,
+        required this.color,
+        required this.price});
