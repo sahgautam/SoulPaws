@@ -8,3 +8,9 @@ class AdoptionViewModel with ChangeNotifier {
   Stream<QuerySnapshot<AdoptionModel>>? _adoptdog;
   //_underscore rakheko variable aaru cls le use garna mildain a
   Stream<QuerySnapshot<AdoptionModel>>? get adoptDog => _adoptdog;
+
+  Future<void> getAdopt() async {
+    var response = _adoptionRepo.getAdopts();
+    _adoptdog = response;
+    notifyListeners();
+  }
