@@ -64,6 +64,7 @@ class _SubScreenCatState extends State<SubScreenCat> {
     print("The Cat -->${_catViewModel.getCat()}");
     super.initState();
     pageControllerCat.addListener(() {
+      setState(() {
 
 
 
