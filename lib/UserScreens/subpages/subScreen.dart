@@ -82,3 +82,13 @@ child: Column(
 crossAxisAlignment: CrossAxisAlignment.start,
 children: [
 Text(
+"Personality",
+style: TextStyle(
+fontSize: 25,
+fontWeight: FontWeight.bold,
+),
+),
+SizedBox(
+height: 5,
+),
+Expanded(
