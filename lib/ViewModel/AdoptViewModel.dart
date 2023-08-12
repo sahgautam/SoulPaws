@@ -14,3 +14,9 @@ class AdoptionViewModel with ChangeNotifier {
     _adoptdog = response;
     notifyListeners();
   }
+
+  Future<void> deleteAdopt(String id) async {
+    await _adoptionRepo.deleteAdopt(id);
+    notifyListeners();
+  }
+}
