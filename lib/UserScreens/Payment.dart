@@ -98,3 +98,9 @@ class _KhaltiPaymentState extends State<KhaltiPayment> {
     Text("Verification Token ${model.token}"),
     );
     });
+    } catch (e) {
+    ScaffoldMessenger.maybeOf(context)
+        ?.showSnackBar(SnackBar(content: Text(e.toString())));
+    }
+    }
+    },
