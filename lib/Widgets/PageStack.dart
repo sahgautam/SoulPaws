@@ -30,3 +30,8 @@ class CreatePageStack extends StatelessWidget {
               builder: (context) => SubScreen(index, dogName, dogDescription,
                   imageLink, price, breed, color)));
     },
+    child: Center(
+    child: Container(
+    margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
+    child: Stack(alignment: Alignment.topCenter, children: [
+    Expanded(
