@@ -93,5 +93,11 @@ class NotificationService {
     await file.writeAsBytes(response.bodyBytes);
     return filePath;
   }
-  
+
+  static void displayFcm(
+      {required RemoteNotification notification,
+        BuildContext? buildContext,
+        String? payload}) async {
+    
+  }
       }
