@@ -23,3 +23,9 @@ List<String> Description = [
   "Hi! I am Oscar \n\"The Meow\"",
   "Henlo! Woofcome"
 ];
+List<String> ImageVal = ["", "", "img_2.png", "img_3.png", ""];
+List<Icon> icons = [
+Icon(
+Icons.favorite,
+color: Colors.pink,
+),
