@@ -81,6 +81,8 @@ class _SubScreenCatState extends State<SubScreenCat> {
         right: 0,
         child: Container(
         width: double.maxFinite,
+        //takes all available width
+        height: MediaQuery.of(context).size.height / 2.2,
 
 
 
